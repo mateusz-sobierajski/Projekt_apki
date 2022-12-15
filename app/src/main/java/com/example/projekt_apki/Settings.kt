@@ -12,7 +12,7 @@ class Settings : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_settings)
         val logoutButton = this.findViewById<AppCompatButton>(R.id.LogoutButton)
-        logoutButton.setOnClickListener(View.OnClickListener { logout() })
+        logoutButton.setOnClickListener({ logout() })
     }
 
     private fun logout() {
