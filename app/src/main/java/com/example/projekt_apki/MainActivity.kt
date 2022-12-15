@@ -1,13 +1,9 @@
 package com.example.projekt_apki
 
-import android.annotation.SuppressLint
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
-import androidx.appcompat.widget.AppCompatTextView
-import com.example.projekt_apki.R.id.textViewFav
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,13 +14,9 @@ class MainActivity : AppCompatActivity() {
         //val textViewFavourite = findViewById<TextView>(textViewFav)
         //textViewFavourite.text = DataSourceFavourite().loadCoffees().size.toString()
 
-        val loginButton = this.findViewById<AppCompatButton>(R.id.buttonLoginMain)
-        loginButton.setOnClickListener {
+        val loginStart = this.findViewById<AppCompatButton>(R.id.buttonStartMain)
+        loginStart.setOnClickListener {
             goToLoginScreen()
-        }
-        val registerButton = this.findViewById<AppCompatButton>(R.id.buttonRegisterMain)
-        registerButton.setOnClickListener {
-            //goToSettings()
         }
 
         val settingsButton = this.findViewById<AppCompatButton>(R.id.SettingButton)
