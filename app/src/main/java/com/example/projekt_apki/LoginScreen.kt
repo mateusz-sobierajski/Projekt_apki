@@ -21,7 +21,7 @@ class LoginScreen : AppCompatActivity() {
     }
 
     private fun logIn() {
-        val intent = Intent(this, ShoppingCart::class.java)
+        val intent = Intent(this, FavouriteStuff::class.java)
         startActivity(intent)
     }
 
