@@ -21,7 +21,8 @@ class LoginScreen : AppCompatActivity() {
     }
 
     private fun logIn() {
-        //val intent = Intent(this, Settings::class.java)
-        //startActivity(intent)
+        val intent = Intent(this, ShoppingCart::class.java)
+        startActivity(intent)
     }
+
 }
