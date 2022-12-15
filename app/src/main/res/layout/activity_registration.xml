@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/background_img"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clipToPadding="false"
+            android:padding="30dp">
+
+            <TextView
+                android:id="@+id/registration_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Rejestracja"
+                android:textAllCaps="false"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/login_input"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registration_header"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:background="@color/white"
+                android:elevation="5dp"
+                android:hint="Login:"
+                android:padding="5dp"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/password_input"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_input"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:elevation="5dp"
+                android:hint="Hasło:"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/password_check_input"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/password_input"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:elevation="5dp"
+                android:hint="Powtórz hasło:"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/registration_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/password_check_input"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Podpowiedź rejestracji"
+                android:textAllCaps="false"
+                android:textSize="14dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/register_btn"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/registration_hint"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:elevation="5dp"
+                android:text="Zarejestruj"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/background_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:adjustViewBounds="true"/>
+
+</RelativeLayout>
