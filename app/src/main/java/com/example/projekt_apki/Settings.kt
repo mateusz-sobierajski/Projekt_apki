@@ -11,8 +11,8 @@ class Settings : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_settings)
-        //val logoutButton = this.findViewById<AppCompatButton>(R.id.LogoutButton)
-        //logoutButton.setOnClickListener({ logout() })
+        val logoutButton = this.findViewById<AppCompatButton>(R.id.LogoutButton)
+        logoutButton.setOnClickListener({ logout() })
     }
 
     private fun logout() {
